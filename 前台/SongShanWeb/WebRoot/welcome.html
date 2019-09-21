@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./lib/layui/css/layui.css">
+<title>中国嵩山景区官网</title>
+<script type="text/javascript" src="./js/jquery.js"></script>
+<script src="./lib/layui/layui.js" charset="utf-8"></script>
+</head>
+<body>
+	
+	<div>
+		<button class="layui-btn layui-btn-lg" style="position:fixed;margin-left:90%;margin-top:3%;z-index:1000" id="btn">跳过</button>
+		<video src="/upload/ani_video.mp4" autoplay loop></video>
+	</div>
+
+</body>
+</html>
+
+<script>
+	
+	// 跳过
+	$("#btn").click(function(){
+		window.location.replace('index.jsp');
+	});
+	
+</script>

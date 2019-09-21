@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>SongShanWeb</display-name>
+	<servlet>
+		<servlet-name>indexUpload</servlet-name>
+		<servlet-class>servlet.indexUpload</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>IndexServlet</servlet-name>
+		<servlet-class>servlet.IndexServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>WebGoodsServlet</servlet-name>
+		<servlet-class>servlet.WebGoodsServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>TicketServlet</servlet-name>
+		<servlet-class>servlet.TicketServlet</servlet-class>
+	</servlet>
+  <servlet>
+    <servlet-name>WebGoodsMServlet</servlet-name>
+    <servlet-class>servlet.WebGoodsMServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>TicketMServlet</servlet-name>
+    <servlet-class>servlet.TicketMServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>AdminServlet</servlet-name>
+    <servlet-class>servlet.AdminServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>messageservlet</servlet-name>
+    <servlet-class>servlet.messageservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>wenhuaservlet</servlet-name>
+    <servlet-class>servlet.wenhuaservlet</servlet-class>
+  </servlet>
+
+	 <servlet>
+    <servlet-name>Servletcnsongshan</servlet-name>
+    <servlet-class>servlet.Servletcnsongshan</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Servletspot</servlet-name>
+    <servlet-class>servlet.Servletspot</servlet-class>
+  </servlet>
+
+
+  <servlet-mapping>
+    <servlet-name>Servletcnsongshan</servlet-name>
+    <url-pattern>/Servletcnsongshan</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Servletspot</servlet-name>
+    <url-pattern>/Servletspot</url-pattern>
+  </servlet-mapping>
+	<!-- 配置初始化参数 -->
+	
+	<!-- URL地址指向-->
+	<context-param>
+		<param-name>url</param-name>
+		<param-value>brgoooo.oicp.io</param-value>
+	</context-param>
+
+
+
+  <servlet-mapping>
+    <servlet-name>messageservlet</servlet-name>
+    <url-pattern>/messageservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>wenhuaservlet</servlet-name>
+    <url-pattern>/wenhuaservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminServlet</servlet-name>
+    <url-pattern>/AdminServlet</url-pattern>
+  </servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>indexUpload</servlet-name>
+		<url-pattern>/indexUpload</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>IndexServlet</servlet-name>
+		<url-pattern>/IndexServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>WebGoodsServlet</servlet-name>
+		<url-pattern>/WebGoodsServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TicketServlet</servlet-name>
+		<url-pattern>/TicketServlet</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WebGoodsMServlet</servlet-name>
+    <url-pattern>/WebGoodsMServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TicketMServlet</servlet-name>
+    <url-pattern>/TicketMServlet</url-pattern>
+  </servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>welcome.html</welcome-file>
+	</welcome-file-list>
+
+	<error-page>
+		<error-code>404</error-code>
+		<location>/404.html</location>
+	</error-page>
+
+</web-app>
